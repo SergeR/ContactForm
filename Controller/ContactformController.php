@@ -16,7 +16,7 @@ class ContactformController extends AppController {
 
     public $helpers = array('Form');
     public $components = array('Email', 'Auth', 'Session');
-    public $uses = array('Contactform.Contactform');
+    public $uses = array('ContactForm.Contactform');
 
     public function beforeFilter() {
         parent::beforeFilter();
@@ -39,7 +39,7 @@ class ContactformController extends AppController {
             if ($this->Contactform->validates()) {
                 $data = $this->request->data['Contactform'];
 
-                $email->template('Contactform.contactform', 'Contactform.cflayout')
+                $email->template('ContactForm.contactform', 'ContactForm.cflayout')
                       ->emailFormat('text')
                       ->viewVars(array('data' => $data))
                       ->to(Sanitize::clean($data['Mail']))
@@ -62,7 +62,7 @@ class ContactformController extends AppController {
         $this->set('calculation', $rand1 . ' + ' . $rand2);
 
         $result = $rand1 + $rand2;
-        $this->Session->write('Contactform.spamcalc', $result);
+        $this->Session->write('ContactForm.spamcalc', $result);
         return $result;
     }
 

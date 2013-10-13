@@ -66,7 +66,7 @@ class Contactform extends AppModel {
 
     public function checkSpamProtectionCalculation($check) {
         App::uses('CakeSession', 'Model/Datasource');
-        return intval($check['Spamprotection']) === intval(CakeSession::read('Contactform.spamcalc'));
+        return intval($check['Spamprotection']) === intval(CakeSession::read('ContactForm.spamcalc'));
     }
 
 }
