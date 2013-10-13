@@ -1,8 +1,7 @@
 <h1>Kontaktformular</h1>
 <?php
- echo $this->Html->css(array(
-    '/Contactform/css/Contactform.css'
-));
+echo $this->Html->css('ContactForm.Contactform');
+
 echo $this->Form->create('ContactForm.Contactform');
 
 echo $this->Form->input('ContactForm.Name', array('label' => __d('contactform', 'name')));
