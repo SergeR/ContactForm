@@ -7,11 +7,11 @@ echo sprintf(
 %s
 ----------------------------
 %s %s",
-    __d('contactform', 'name'), Sanitize::clean($data['Name']),
-    __d('contactform', 'email'), Sanitize::clean($data['Mail']),
+    __d('contact_form', 'name'), Sanitize::clean($data['Name']),
+    __d('contact_form', 'email'), Sanitize::clean($data['Mail']),
 
-    __d('contactform', 'message'),
+    __d('contact_form', 'message'),
     Sanitize::stripAll($data['Message']),
 
-    __d('contactform', 'sent from'), Router::url('/', true)
+    __d('contact_form', 'sent from'), Router::url('/', true)
 );
