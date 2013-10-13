@@ -10,6 +10,6 @@ echo $this->Form->input('ContactForm.Message', array('type' => 'textarea', 'labe
 echo $this->Form->label('ContactForm.Spamprotection', __d('contactform', 'spam protection').' - '.$calculation);
 echo $this->Form->input('ContactForm.Spamprotection', array('label' => false, 'autocomplete' => 'off'));
 
-echo $this->Form->submit('Absenden', array('label' => __d('contactform', 'submit')));
+echo $this->Form->submit(__d('contactform', 'submit'));
 
 echo $this->Form->end();
