@@ -1,0 +1,17 @@
+{
+	"name": "serger/contact-form",
+	"type": "cakephp-plugin",
+	"description" : "Simple contactform plugin for CakePHP2",
+	"keywords" : ["cakephp", "contactform","contacts","plugin"],
+	"license":"MIT",
+	"authors" : [
+		{
+			"name":"Patrick Hafner",
+			"homepage":"http://patrickhafner.de"
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.3",
+		"composer/installers": "*"
+	},
+}
